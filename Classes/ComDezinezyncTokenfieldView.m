@@ -43,6 +43,17 @@
     }
 }
 
+-(void)setBackgroundColor_:(id)color {
+  UIColor *c = [[TiUtils colorValue:color] _color];
+  JSTokenField *s = [self square];
+  s.backgroundColor = c;
+}
+
+-(void)setLabel_:(id)label {
+	JSTokenField *s= [self square];
+	s.label.text=label;
+}
+
 #pragma mark -
 #pragma mark JSTokenFieldDelegate
 

@@ -11,7 +11,9 @@ var tokens = []; // We'll store the tokens in here for reference.
 var tf = TiTokenField.createView({
 	top:0,
 	height: 40,
-	width: Ti.UI.FILL
+	width: Ti.UI.FILL,
+	label: "Hello",
+	backgroundColor: "blue"
 });
 
 tf.addEventListener('add', function(e){
