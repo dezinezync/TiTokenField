@@ -31,11 +31,6 @@
         
         [square setDelegate:self];
         [self addSubview:square];
-        
-        UIView *separator1 = [[[UIView alloc] initWithFrame:CGRectMake(0, square.bounds.size.height-1, square.bounds.size.width, 1)] autorelease];
-        [separator1 setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin];
-        [square addSubview:separator1];
-        [separator1 setBackgroundColor:[UIColor lightGrayColor]];
     }
     return square;
 }
