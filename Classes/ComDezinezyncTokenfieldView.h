@@ -9,7 +9,6 @@
 
 @interface ComDezinezyncTokenfieldView : TiUIView <JSTokenFieldDelegate> {
     JSTokenField *square;
-    //NSMutableArray *tokens;
 }
 
 @end

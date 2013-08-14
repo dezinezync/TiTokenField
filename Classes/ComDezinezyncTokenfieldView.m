@@ -24,15 +24,8 @@
 
 -(UIView*)square
 {
-    /*[[NSNotificationCenter defaultCenter] addObserver:self
-											 selector:@selector(handleTokenFieldFrameDidChange:)
-												 name:JSTokenFieldFrameDidChangeNotification
-											   object:nil];
-    */
     if (square==nil)
     {
-        //tokens= [[NSMutableArray alloc] init];
-        
         square = [[JSTokenField alloc] init];
         square.label.text=@"To:";
         
@@ -60,14 +53,7 @@
 
 - (void)tokenField:(JSTokenField *)tokenField didAddToken:(NSString *)title representedObject:(id)obj
 {
-	//NSDictionary *recipient = [NSDictionary dictionaryWithObject:obj forKey:title];
-	//[tokens addObject:recipient];
-	//NSLog(@"Added token for < %@ : %@ >\n%@", title, obj, tokens);
-    
-    //Clear the textField
-    
-    
-    if ([self.proxy _hasListeners:@"add"]){
+	if ([self.proxy _hasListeners:@"add"]){
         
         NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
         
@@ -82,21 +68,7 @@
 
 - (void)tokenField:(JSTokenField *)tokenField didRemoveToken:(NSString *)title representedObject:(id)obj
 {
-	//[tokens removeObjectAtIndex:index];
-    /*NSMutableArray *discardedToken = [NSMutableArray array];
-    JSTokenButton *item;
-    
-    for (item in tokens) {
-        if (item == obj)
-            [discardedToken addObject:item];
-    }
-
-    [tokens removeObjectsInArray:discardedToken];
-    
-//    [tokens removeObject (id *)obj];
-	NSLog(@"Deleted token %@\n%@",tokenName,tokens);*/
-    
-    if ([self.proxy _hasListeners:@"delete"]){
+	if ([self.proxy _hasListeners:@"delete"]){
         
         NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
         
