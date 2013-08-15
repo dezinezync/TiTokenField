@@ -25,6 +25,16 @@
 	[self makeViewPerformSelector:@selector(addToken:) withObject:args createIfNeeded:YES waitUntilDone:NO];
 }
 
+-(void)removeToken:(id)args
+{
+	[self makeViewPerformSelector:@selector(removeToken:) withObject:args createIfNeeded:YES waitUntilDone:NO];
+}
+
+-(void)removeAllTokens:(id)args
+{
+	[self makeViewPerformSelector:@selector(removeAllTokens:) withObject:args createIfNeeded:YES waitUntilDone:NO];
+}
+
 -(TiDimension)defaultAutoHeightBehavior:(id)unused
 {
     return TiDimensionAutoSize;

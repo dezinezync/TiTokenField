@@ -45,16 +45,19 @@ win.addEventListener("open", function() {
 		tf.blur();
 	}, 5000);*/
 	
-	//Adding tokens programatically
-	/*setTimeout(function() {
-		tf.addToken("tag1");
-		tf.addToken("tag2");
-	},1000);
+	//Adding & Removing a token programatically
+	tf.addToken("tag1");
+	tf.addToken("tag2");
+	tf.addToken("tag3");
+	tf.addToken("tag4");
 
 	setTimeout(function() {
-		tf.addToken("tag3");
-		tf.addToken("tag4");
-	},2000);*/
+		tf.removeToken("tag2");
+	},2500);
+
+	setTimeout(function() {
+		tf.removeAllTokens();
+	}, 5000);
 
 });
 

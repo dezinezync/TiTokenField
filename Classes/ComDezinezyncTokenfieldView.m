@@ -65,8 +65,17 @@
 -(void)addToken:(id)title {
     ENSURE_SINGLE_ARG(title, NSString);
     
-    //[square addTokenWithTitle:title];
     [square addTokenWithTitle:title representedObject:[NSNull null]];
+}
+
+-(void)removeToken:(id)title {
+    ENSURE_SINGLE_ARG(title, NSString);
+    
+    [square removeTokenForString:title];
+}
+
+-(void)removeAllTokens:(id)args {
+    [square removeAllTokens];
 }
 
 #pragma mark -
