@@ -54,6 +54,14 @@
 	s.label.text=label;
 }
 
+-(void)focus:(id)args {
+    [square.textField becomeFirstResponder];
+}
+
+-(void)blur:(id)args {
+    [square.textField resignFirstResponder];
+}
+
 #pragma mark -
 #pragma mark JSTokenFieldDelegate
 

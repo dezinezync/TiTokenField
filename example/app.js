@@ -34,4 +34,16 @@ tf.addEventListener('delete', function(e){
 
 win.add(tf); //
 
+win.addEventListener("open", function() {
+
+	setTimeout(function() {
+		tf.focus();
+	},2000);
+
+	setTimeout(function() {
+		tf.blur();
+	}, 5000);
+
+});
+
 win.open(); // open our window
