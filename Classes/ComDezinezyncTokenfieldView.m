@@ -62,6 +62,13 @@
     [square.textField resignFirstResponder];
 }
 
+-(void)addToken:(id)title {
+    ENSURE_SINGLE_ARG(title, NSString);
+    
+    //[square addTokenWithTitle:title];
+    [square addTokenWithTitle:title representedObject:[NSNull null]];
+}
+
 #pragma mark -
 #pragma mark JSTokenFieldDelegate
 

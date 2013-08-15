@@ -36,13 +36,25 @@ win.add(tf); //
 
 win.addEventListener("open", function() {
 
-	setTimeout(function() {
+	//Blur and focus events
+	/*setTimeout(function() {
 		tf.focus();
 	},2000);
 
 	setTimeout(function() {
 		tf.blur();
-	}, 5000);
+	}, 5000);*/
+	
+	//Adding tokens programatically
+	/*setTimeout(function() {
+		tf.addToken("tag1");
+		tf.addToken("tag2");
+	},1000);
+
+	setTimeout(function() {
+		tf.addToken("tag3");
+		tf.addToken("tag4");
+	},2000);*/
 
 });
 

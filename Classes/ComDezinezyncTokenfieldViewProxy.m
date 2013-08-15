@@ -20,6 +20,11 @@
 	[self makeViewPerformSelector:@selector(focus:) withObject:args createIfNeeded:YES waitUntilDone:NO];
 }
 
+-(void)addToken:(id)args
+{
+	[self makeViewPerformSelector:@selector(addToken:) withObject:args createIfNeeded:YES waitUntilDone:NO];
+}
+
 -(TiDimension)defaultAutoHeightBehavior:(id)unused
 {
     return TiDimensionAutoSize;
