@@ -27,7 +27,7 @@
     if (square==nil)
     {
         square = [[JSTokenField alloc] init];
-        square.label.text=@"To:";
+        square.label.text=@"";
         
         [square setDelegate:self];
         [self addSubview:square];
