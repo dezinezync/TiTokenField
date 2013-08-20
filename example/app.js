@@ -12,8 +12,8 @@ var tf = TiTokenField.createView({
 	top:0,
 	height: 40,
 	width: Ti.UI.FILL,
-	label: "Hello",
-	backgroundColor: "blue"
+	label: "To: ",
+	backgroundColor: "#e0e0e0"
 });
 
 tf.addEventListener('add', function(e){

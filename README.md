@@ -1,7 +1,7 @@
 TiTokenField
 ============
 
-Titanium Module for NSTokens like interface leveraging JSTokenField
+Titanium Module for NSTokens like interface leveraging JSTokenField viz. Email.app and Messages.app
 
 INSTALL THE MODULE
 --------------------

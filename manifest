@@ -2,12 +2,12 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 0.1
+version: 1.0
 apiversion: 2
-description: My module
-author: Your Name
-license: Specify your license
-copyright: Copyright (c) 2013 by Your Company
+description: TiTokenField is based on JSTokenField which enables you to create a NSTokenField like View viz. Email.app, Messages.app
+author: Nikhil Nigade
+license: Check the LICENSE doc included
+copyright: Copyright (c) 2013 by Nikhil Nigade
 
 
 # these should not be edited
