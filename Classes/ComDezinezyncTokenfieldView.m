@@ -54,6 +54,11 @@
 	s.label.text=label;
 }
 
+-(void)setColor_:(id)color {
+    JSTokenField *s = [self square];
+    s.textField.textColor = [[TiUtils colorValue:color] _color];
+}
+
 -(void)focus:(id)args {
     [square.textField becomeFirstResponder];
 }
